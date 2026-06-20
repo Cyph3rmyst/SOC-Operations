@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-# SOC-Operations-
-Defensive Operations Projects,Labs and Documentations.
-=======
 ## 🔵SOC 🔷OPERATIONS 🔵
 
 Welcome To SOC_LABS repository where i document my Journey to a Security Operations Center Analyst.
@@ -188,4 +184,3 @@ Books give you a guide not the actual current threats but a pattern of what has 
 ###### (11) 🏷- DEFENSIVE CTFs 
 
 // such as @htb Holmes CTF
->>>>>>> 424f0f6 (Intial Cyber Warrior Path Commit done on Sat Jun 20 03:00:44 PM EDT 2026)
