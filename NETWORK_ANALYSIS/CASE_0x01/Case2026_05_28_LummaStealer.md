@@ -112,20 +112,3 @@ Becka Rolf
 
 
 ![img](case1_img6.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
