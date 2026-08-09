@@ -4,7 +4,7 @@ Analysis date: 06-08-2026
 
 ### Source of PCAP:
 
-    Malware-Traffic-Analysis.net
+   Malware-Traffic-Analysis.net
 
 ### File Name:
 
@@ -12,19 +12,21 @@ Analysis date: 06-08-2026
 
 ### Zip file password:
 
-Infected_20241126
+infected_20241126
 
 ### SCENARIO
 
 - LAN Segment range:
-  (10.11.26.0 - 10.11.26.255)
+  (10.11.26.0/24 through 10.11.26.0 - 10.11.26.255)
 
 - Domain:
+  nemotodes.health
 
 - Domain Controller:
-  10.11.26.3
+  10.11.26.3 NEMOTODES-DC
 
 - AD Environment Name:
+  NEMOTODES
 
 - LAN Segment gateway:
   10.11.26.1
@@ -42,7 +44,7 @@ Infected_20241126
 
 ### OBJECTIVES
 
-Malware Name:<>
+Malware Name: NetSupport Rat
 
 1. What is the IP of the infected Windows client?
    10.11.26.183
@@ -72,7 +74,7 @@ To identify the IP of the infected windows client we filter "http" traffic to id
 
 ![img](Case4_img1.png)
 
-Checking the type of traffic coming from it we see its sending some POST request data which is encoded to this url "http://194.180.191.64/fakeurl.htm" which could be possible data leaks.
+Checking the type of traffic coming from it we see its sending some POST request data which is encoded to this url "http[:]//194[.]180[.]191[.]64/fakeurl.htm" which could be possible data leaks.
 
 ![img](Case4_img2.png)
 
