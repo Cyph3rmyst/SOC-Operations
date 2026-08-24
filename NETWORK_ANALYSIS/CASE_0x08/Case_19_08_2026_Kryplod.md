@@ -126,12 +126,12 @@ During the investigation we identify a suspicious file which was downloaded via 
 
 which was downloaded _2021-09-11 @ 02:17:27_:
 
-![img](infectiontime.png)
+![img](case8_img10.png)
 
 analysing this file it identified to be a windows executable:
 
 ![img](case8_img9.png)
 
-Obtaining it md5 hash and performing a lookup on virustotal,its identified to be a windows trojan:
+Obtaining it md5 hash _57e32ee603bf5f7fbf4e4befaac52258_ and performing a lookup on virustotal,its identified to be a windows trojan:
 
 ![img](case8_img11.png)
