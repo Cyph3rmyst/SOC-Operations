@@ -28,7 +28,7 @@ infected_20200612
 
 ### OBJECTIVES
 
-1. Malware Name: <>
+1. Malware Name: trojan.mint/yakes
 
 2. What is the IP of the infected Windows client? 10.6.12.203
 
@@ -64,6 +64,8 @@ The host with ip "10.6.12.203" is seen to make a http "GET" request for a file n
 Exporting this file we identify it to be a windows executable with file hash of _"2545b15483165d00d1b6d63d9fd0821d"_
 
 ![img](case20_img2.png)
+
+![img](case20_img7.png)
 
 this confirms that this host is infected.
 

@@ -28,7 +28,7 @@ infected_20200528
 
 ### OBJECTIVES
 
-1. Malware Name: <>
+1. Malware Name: trojan.emotet/erph
 
 2. What is the IP of the infected Windows client? 10.5.28.229
 
@@ -77,9 +77,12 @@ The traffic obtained from the http rquests shows that the host with ip "10.5.28.
 Th two files are identified with sha256 hash of:
 
 1. cursor.png "_4e76d73f3b303e481036ada80c2eeba8db2f306cbc9323748560843c80b2fed1_"
+   ![img](case19_img8.png)
 
 2. imgpaper.png
    "_934c84524389ecfb3b1dfcb28f9697a2b52ea0ebcaa510469f0d2d9086bcc79a_"
+
+![img](case19_img9.png)
 
 Performing a file has lookup identifies the files to be:
 
