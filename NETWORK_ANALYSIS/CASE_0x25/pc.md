@@ -1,0 +1,107 @@
+# MALWARE TRAFFIC ANALYSIS
+
+Analysis date: 08-Sep-2026
+
+### Source of PCAP:
+
+Malware-Traffic-Analysis.net
+
+### File Name:
+
+2019-10-05-traffic-analysis-exercise-part-2.pcap
+
+### Zip file password:
+
+infected_20191005
+
+### SCENARIO
+
+- LAN Segment range: 172.16.2.0/24 (172.16.2.0 through 172.16.2.255)
+
+- Domain: tinsolutions.net
+
+- Domain Controller: 172.16.2.2 (Tinsolutions-DC)
+
+- LAN Segment gateway: 172.16.2.1
+
+- LAN segment broadcast address: 172.16.2.255
+
+### OBJECTIVES
+
+1. Malware Name: <>
+
+2. What is the IP of the infected Windows client? 172.16.2.219
+
+3. What is the Hostname of the infected windows client? G-UNDERWOOD-PC
+
+4. What is the MAC address of the infected windows client? 08:17:f4:67:20:0b
+
+5. What is the user account name of the infected windows client? geneva.underwood
+
+6. What is the full name of the user from the infected windows user account?
+   Geneva Underwood
+
+- Indicators Of Compromise
+
+7. Suspicious IPs : 185.193.141.46
+
+8. Suspicious URL : http[:]//xoccolearp[.]com/mogalm/traxic.php?l=bovex5.lz2
+
+9. Malware Source: ip : 185.193.141.46
+
+10. TCP port: src port : 49202
+
+11. Infection Time:?
+    2019-10-04 18:05:56
+
+### ANALYSIS
+
+- Infected windows client
+
+From export objects we identify a file that got downloaded by the host with ip "172.16.2.219" from "185.193.141.46":
+
+![img](case25_img3.png)
+
+Examinig the file we identify that its a windows executable with md5 hash of "_a0a7b126711a37b9b95ea23cb2cd2227_:
+
+![img](case25_img2.png)
+
+Perfoming further analysis in virus total we identify the file to be:
+
+![virus]
+
+IP: _172.16.2.219_
+
+- MAC Address of the infected windows host
+
+Now that we have the IP of the Infected Windows Host,we need to identify its Mac address which we do so by filtering with its ip address "ip.addr == <> " and find it in the Ethernet II, under src mac address.
+
+![img](case25_img4.png)
+
+Mac addr: _08:17:f4:67:20:0b_
+
+- Hostname of the infected windows client
+
+To identify the hostname of the infected windows client we use the filter "nbns && ip.addr == 172.16.2.219"
+
+![img](case25_img6.png)
+
+Hostname: _G-UNDERWOOD-PC_
+
+- User Account Name
+
+To identify the user account name we need to analyze Kerberos traffic to identify any username used for ticket granting,we use the filter
+
+filter: "ip.addr == 172.16.2.219 && kerberos.CNameString"
+
+![img](case25_img5.png)
+
+We identify the user account to be:
+
+The user account: _geneva.underwood_
+
+- Full Username of the user
+
+To identify the full name of the the user of the compromised host we need to use the find option. "Ctrl + F" the filter for "packet details" + [String + case sensitive + multiple occurrences + backwards] and by trancating the user account name to "eneva"
+
+Full Username: _Geneva Underwood_
