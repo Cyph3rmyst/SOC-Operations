@@ -8,6 +8,7 @@
 
 The objective of this repository is to systematically advance defensive security skills through progressive stages:
 
+
 ```text
 📌 SOC L1 ➡️ 📌 SOC L2 ➡️ 📌 Malware Analysis & Reverse Engineering ➡️ 📌 Digital Forensics
 ```
@@ -23,7 +24,7 @@ Each project folder follows a standardized documentation and evidence structure:
 └── 🗂️ <case_artifact>  // e.g., .pcap, .log samples
 ```
 
-*Note: Every project entry includes comprehensive reporting and in-depth research.*
+*Note: Every project entry includes comprehensive reporting and in-depth research and around 25 cases of projects*
 
 ---
 
