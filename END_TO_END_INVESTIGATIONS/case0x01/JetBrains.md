@@ -1,12 +1,17 @@
 # JetBrains Lab
 
+## Date:
+
+12/Oct/2026
+
 ## Objective
 
 - Analyze network traffic using Wireshark to identify web server exploitation, extract attacker IOCs and persistence mechanisms, and map attack techniques to MITRE ATT&CK.
 
-### category:
+### Category:
 
 - Network forensics
+
 
 ### Tactics
 
@@ -36,4 +41,4 @@ The first objective is to identify which ips are involved in conversations and w
 
 ![img](case0x01_img2.png)
 
-Since it was a web attack we narrow down out investigation with the filter "" and identify a conversation between "172.31.25.119" and "23.158.56.196" and it seems to have brute-force patterns in login:
+Since it was a web attack we narrow down out investigation with the filter "ip.addr == 172.31.25.119 and ip.addr == 23.158.56.196 and http  " and identify a conversation between "172.31.25.119" and "23.158.56.196" and it seems to have brute-force patterns in login:
