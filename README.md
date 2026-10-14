@@ -16,10 +16,6 @@ The objective of this repository is to systematically advance defensive security
 
 |
 
-📌 Malware Analysis & Reverse Engineering
-
-|
-
 📌 Digital Forensics
 
 |
