@@ -9,11 +9,17 @@
 The objective of this repository is to systematically advance defensive security skills through progressive stages and later venture in offensive security:
 
 📌 SOC L1
+
 |
+
 📌 SOC L2
+
 |
+
 📌 Digital Forensics
+
 |
+
 📌 Offensive Security
 
 ### Repository Structure
